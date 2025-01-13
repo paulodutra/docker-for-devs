@@ -7,3 +7,6 @@ RUN apt update && \
 USER node
 
 WORKDIR /home/node/app
+
+COPY package.json ./
+RUN npm install 
